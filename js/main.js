@@ -6,14 +6,22 @@
 //when AC is clicked display area becomes empty (an empty string?)
 
 //Event listener for All Clear button
-document.getElementById("AC").addEventListener("click", function(){
+
+//get all the keys from the calculator
+
+document.getElementById("CE").addEventListener("click", function(){
   document.getElementById("display").innerHTML = "";
 });
 
+      // *referencing above * this may be better for the CE function as it will delete the last entry*
+
 //Event listener for Clear Entry button (erases last number or operation entered)
-document.getElementById("CE").addEventListener("click", function(){
-  document.getElementById("display").innerHTML = ; //Working on function
+document.getElementById("AC").addEventListener("click", function(){
+  document.getElementById("display").innerHTML = ""; //Working on function
 });
+
+    // * referencing above * AC function to be defined.
+
 
 //Event listener for % button
 document.getElementById("%").addEventListener("click", function(){
@@ -109,3 +117,4 @@ document.getElementById("Ans").addEventListener("click", function(){
 document.getElementById("=").addEventListener("click", function(){
   document.getElementById("display").innerHTML = "=";
 });
+*/
