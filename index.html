@@ -66,41 +66,44 @@
 
 
 <!--create a table of button elements for each calculator button. Each button will be distinguishable by its id="" e.g. id="1", id="2", id="=" etc. standard calculators have 16 buttons, so there will be 4 rows of 4 buttons-->
-
-<div id="calculator">
-  <!-- Screen and clear key -->
-  <div class="top">
-    <span class="clear">C</span>
-    <div class="display"></div>
-  </div>
-  
-  <div class="keys">
-    <!-- operators and other keys -->
-    <span>7</span>
-    <span>8</span>
-    <span>9</span>
-    <span class="operator">+</span>
-    <span>4</span>
-    <span>5</span>
-    <span>6</span>
-    <span class="operator">-</span>
-    <span>1</span>
-    <span>2</span>
-    <span>3</span>
-    <span class="operator">÷</span>
-    <span>0</span>
-    <span>.</span>
-    <span class="eval">=</span>
-    <span class="operator">x</span>
-  </div>
-</div>
-
-
-
-<script src="js/main.js"></script>
+<html>
+<head></head>
+<body>
+<h3>Simple Calculator</h3>
+<br/>
+<form Name="calc">  <!--use forms for input value -->
+<table border=2>
+<tr> <!-- table row -->
+<td colspan=4><input type=text Name="screen"></td> <!--table layout -->
+</tr>
+<tr>
+<td><input type=button value="0" OnClick="calc.display.value+='0'"></td> <!-- appends the numbers. -->
+<td><input type=button value="1" OnClick="calc.display.value+='1'"></td> <!-- displays a value instead of a string. -->
+<td><input type=button value="2" OnClick="calc.display.value+='2'"></td>
+<td><input type=button value="+" OnClick="calc.display.value+='+'"></td>
+</tr>
+<tr>
+<td><input type=button value="3" OnClick="calc.display.value+='3'"></td>
+<td><input type=button value="4" OnClick="calc.display.value+='4'"></td>
+<td><input type=button value="5" OnClick="calc.display.value+='5'"></td>
+<td><input type=button value="-" OnClick="calc.display.value+='-'"></td>
+</tr>
+<tr>
+<td><input type=button value="6" OnClick="calc.display.value+='6'"></td>
+<td><input type=button value="7" OnClick="calc.display.value+='7'"></td>
+<td><input type=button value="8" OnClick="calc.display.value+='8'"></td>
+<td><input type=button value="x" OnClick="calc.display.value+='*'"></td>
+</tr>
+<tr>
+<td><input type=button value="9" OnClick="calc.display.value+='9'"></td>
+<td><input type=button value="C" OnClick="calc.display.value=''"></td>
+<td><input type=button value="=" OnClick="calc.display.value+=''"></td>
+<td><input type=button value="/" OnClick="calc.display.value+='/'"></td>
+</tr>
+</table>
+</form>
 </body>
 </html>
-
 
 <script src="js/main.js"></script>
 </body>
