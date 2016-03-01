@@ -17,7 +17,7 @@
   <div id="total"></div>
   
   <div id="operators">
-    <button>+</button>
+    <button id="+">+</button>
     <button>-</button>
     <button>/</button>
     <button>*</button>
@@ -25,7 +25,7 @@
   </div>
   <br>
   <div id="numbers"> 
-    <button>1</button>
+    <button id="1">1</button>
     <button>2</button>
     <button>3</button>
     <button>4</button>
@@ -69,7 +69,7 @@
 <form Name="calc">  <!--use forms for input value -->
 <table border=2>
 <tr> <!-- table row -->
-<td colspan=4><input type=text Name="screen"></td> <!--table layout -->
+<td colspan=4><input type=text Name="display"></td> <!--table layout -->
 </tr>
 <tr>
 <td><input type=button value="0" OnClick="calc.display.value+='0'"></td> <!-- appends the numbers. -->

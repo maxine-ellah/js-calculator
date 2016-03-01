@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <title>JS Calculator</title>
+</head>
+<body>
+
+
+<!--create 2 divs of input elements with the type "button" for each calculator button. Each div will separate the buttons into "numbers" and "operators". Each button will be distinguishable by its value="" e.g. value="1", value="2", value="=" etc.-->
+
+<form name="frm">
+
+<div id="calc">
+
+  <input id="total">
+  
+  <div id="operators">
+    <input type="button" name="plus" value="+" onClick="runplus()">
+    <input type="button" name="minus" value="-" onClick="runminus()">
+    <input type="button" name="divide" value="/" onClick="rundivide()">
+    <input type="button" name="mult" value="*" onClick="runmult()">
+    <input type="button" name="calc" value="=" onClick="evalu()">
+  </div>
+  <br>
+  <div id="numbers"> 
+    <input type="button" name="1" value="1" onClick="run1()">
+    <input type="button" name="2" value="2" onClick="run2()">
+    <input type="button" name="3" value="3" onClick="run3()">
+    <input type="button" name="4" value="4" onClick="run4()">
+    <input type="button" name="5" value="5" onClick="run5()">
+    <input type="button" name="6" value="6" onClick="run6()">
+    <input type="button" name="7" value="7" onClick="run7()">
+    <input type="button" name="8" value="8" onClick="run8()">
+    <input type="button" name="9" value="9" onClick="run9()">
+    <input type="button" name="clear" value="C" onClick="runclear()">
+    <input type="button" name="0" value="0" onClick="run0()">
+    <input type="button" name="clearall" value="AC" onClick="runclearall()">
+  </div>
+
+  
+</div>
+<script src="js/test.js"></script>
+</body>
+
+</html>
+
+
