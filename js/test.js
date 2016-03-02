@@ -1,5 +1,6 @@
 var display = "0"; //value of display
 var displayLength = 8;  //maximum number of decimals before digit
+var current = 0;
 
 function run1() 
 {document.frm.total.value += "1";}
@@ -32,7 +33,13 @@ function run0()
 {document.frm.total.value += "0";}
 
 function runDec()     //decimal, used runDec instead of .
-{document.frm.total.value += ".";}  
+{document.frm.total.value += ".";} 
+
+// One decimal place only
+// function runDec(){
+// if (document.frm.total.value = 0){
+//   document.frm.total.value = "0."};
+// }; 
 
 function runplus() 
 {document.frm.total.value += "+";}
@@ -69,20 +76,18 @@ function evalu()
 {
   var evalo = eval(document.frm.total.value) 
   document.frm.total.value = evalo;
+
+  if(document.frm.total.value.length > displayLength){
+    document.frm.total.value = "Too Long";
+    console.log("toolong");
+  }
 }
 
 
 //HEIDI
 //if current length is greater than 8... error message
-if(total.length > displayLength){
-    document.frm.total.value = "Too Long";
-    console.log(toolong);
-  }
 
 
-// One decimal place only
-function runDec(){
-if (current.length == 0){
-  total = "0."};
-};
+
+
 
