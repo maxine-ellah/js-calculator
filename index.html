@@ -4,104 +4,51 @@
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
   <title>JS Calculator</title>
 </head>
 <body>
 
 
-<!--create a divs of button elements for each calculator button. Each button will be distinguishable by its id="" e.g. id="1", id="2", id="=" etc. buttons will be separated into 2 types, defined by id "number", and "operator". -->
+<!--create 2 divs of input elements with the type "button" for each calculator button. Each div will separate the buttons into "numbers" and "operators". Each button will be distinguishable by its value="" e.g. value="1", value="2", value="=" etc.-->
+
+<form name="frm">
 
 <div id="calc">
 
-  <div id="total"></div>
+  <input id="total"> <!-- display-->
+    <input type="button" class ="clear" name="clearall" value="AC" onClick="runclearall()"> 
+    <input type="button" class ="clear" name="clear" value="C" onClick="runclear()">
+    <input type="button" class ="operators" name="plus" value="+" onClick="runplus()">
+    
+    <input type="button" class ="numbers" name="7" value="7" onClick="run7()">
+    <input type="button" class ="numbers" name="8" value="8" onClick="run8()">
+    <input type="button" class ="numbers" name="9" value="9" onClick="run9()">
+    <input type="button" class ="operators" name="mult" value="*" onClick="runmult()">
+
+    <input type="button" class ="numbers" name="4" value="4" onClick="run4()">
+    <input type="button" class ="numbers" name="5" value="5" onClick="run5()">
+    <input type="button" class ="numbers" name="6" value="6" onClick="run6()">
+    <input type="button" class ="operators" name="divide" value="/" onClick="rundivide()">
+
+
+    <input type="button" class ="numbers" name="1" value="1" onClick="run1()">
+    <input type="button" class ="numbers" name="2" value="2" onClick="run2()">
+    <input type="button" class ="numbers" name="3" value="3" onClick="run3()">
+    <input type="button" class ="operators" name="minus" value="-" onClick="runminus()">
   
-  <div id="operators">
-    <button id="+">+</button>
-    <button>-</button>
-    <button>/</button>
-    <button>*</button>
-    <button id="equals">=</button>
+    <input type="button" class ="numbers" name="0" value="0" onClick="run0()">
+    <input type="button" class ="numbers" name="." value="." onClick="runDec()"> <!-- added decimal-->
+    <input type="button" class ="calculate" name="calc" value="=" onClick="evalu()">
+    <input type="button" class ="operators" name="mult" value="*" onClick="runmult()">
+    
+
   </div>
-  <br>
-  <div id="numbers"> 
-    <button id="1">1</button>
-    <button>2</button>
-    <button>3</button>
-    <button>4</button>
-    <button>5</button>
-    <button>6</button>
-    <button>7</button>
-    <button>8</button>
-    <button>9</button>
-    <button id="clear">C</button>
-    <button>0</button>
-    <button id="clearall">AC</button>
-  </div>
+
   
 </div>
- 
-
-=======
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/main.css">
-  <title>JS Calculator</title>
-</head>
-<body> -->
-
-
-<!--create a table of button elements for each calculator button. Each button will be distinguishable by its id="" e.g. id="1", id="2", id="=" etc. standard calculators have 16 buttons, so there will be 4 rows of 4 buttons-->
-
->>>>>>> 9494bea53ed77c777de5b1892d1658267c9143c8
-
-
-
-
-<html>
-<head></head>
-<body>
-<h3>Simple Calculator</h3>
-<br/>
-<form Name="calc">  <!--use forms for input value -->
-<table border=2>
-<tr> <!-- table row -->
-<td colspan=4><input type=text Name="display"></td> <!--table layout -->
-</tr>
-<tr>
-<td><input type=button value="0" OnClick="calc.display.value+='0'"></td> <!-- appends the numbers. -->
-<td><input type=button value="1" OnClick="calc.display.value+='1'"></td> <!-- displays a value instead of a string. -->
-<!-<td><input type=button value="2" OnClick="calc.display.value+='2'"></td>
-<td><input type=button value="+" OnClick="calc.display.value+='+'"></td>
-</tr>
-<tr>
-<td><input type=button value="3" OnClick="calc.display.value+='3'"></td>
-<td><input type=button value="4" OnClick="calc.display.value+='4'"></td>
-<td><input type=button value="5" OnClick="calc.display.value+='5'"></td>
-<td><input type=button value="-" OnClick="calc.display.value+='-'"></td>
-</tr>
-<tr>
-<td><input type=button value="6" OnClick="calc.display.value+='6'"></td>
-<td><input type=button value="7" OnClick="calc.display.value+='7'"></td>
-<td><input type=button value="8" OnClick="calc.display.value+='8'"></td>
-<td><input type=button value="x" OnClick="calc.display.value+='*'"></td>
-</tr>
-<tr>
-<td><input type=button value="9" OnClick="calc.display.value+='9'"></td>
-<td><input type=button value="C" OnClick="calc.display.value=''"></td>
-<td><input type=button value="=" OnClick="calc.display.value+=''"></td>
-<td><input type=button value="/" OnClick="calc.display.value+='/'"></td>
-</tr>
-</table>
-</form>
+<script src="js/test.js"></script>
 </body>
+
 </html>
->>>>>>> 9494bea53ed77c777de5b1892d1658267c9143c8
 
 
-<script src="js/main.js"></script>
-</body>
-</html>
