@@ -16,29 +16,32 @@
 <div id="calc">
 
   <input id="total"> <!-- display-->
+    <input type="button" class ="clear" name="clearall" value="AC" onClick="runclearall()"> 
+    <input type="button" class ="clear" name="clear" value="C" onClick="runclear()">
+    <input type="button" class ="operators" name="plus" value="+" onClick="runplus()">
+    
+    <input type="button" class ="numbers" name="7" value="7" onClick="run7()">
+    <input type="button" class ="numbers" name="8" value="8" onClick="run8()">
+    <input type="button" class ="numbers" name="9" value="9" onClick="run9()">
+    <input type="button" class ="operators" name="mult" value="*" onClick="runmult()">
+
+    <input type="button" class ="numbers" name="4" value="4" onClick="run4()">
+    <input type="button" class ="numbers" name="5" value="5" onClick="run5()">
+    <input type="button" class ="numbers" name="6" value="6" onClick="run6()">
+    <input type="button" class ="operators" name="divide" value="/" onClick="rundivide()">
+
+
+    <input type="button" class ="numbers" name="1" value="1" onClick="run1()">
+    <input type="button" class ="numbers" name="2" value="2" onClick="run2()">
+    <input type="button" class ="numbers" name="3" value="3" onClick="run3()">
+    <input type="button" class ="operators" name="minus" value="-" onClick="runminus()">
   
-  <div id="operators">
-    <input type="button" name="plus" value="+" onClick="runplus()">
-    <input type="button" name="minus" value="-" onClick="runminus()">
-    <input type="button" name="divide" value="/" onClick="rundivide()">
-    <input type="button" name="mult" value="*" onClick="runmult()">
-    <input type="button" name="calc" value="=" onClick="evalu()">
-  </div>
-  <br>
-  <div id="numbers"> 
-    <input type="button" name="1" value="1" onClick="run1()">
-    <input type="button" name="2" value="2" onClick="run2()">
-    <input type="button" name="3" value="3" onClick="run3()">
-    <input type="button" name="4" value="4" onClick="run4()">
-    <input type="button" name="5" value="5" onClick="run5()">
-    <input type="button" name="6" value="6" onClick="run6()">
-    <input type="button" name="7" value="7" onClick="run7()">
-    <input type="button" name="8" value="8" onClick="run8()">
-    <input type="button" name="9" value="9" onClick="run9()">
-    <input type="button" name="clear" value="C" onClick="runclear()">
-    <input type="button" name="0" value="0" onClick="run0()">
-    <input type="button" name="." value="." onClick="runDec()"> <!-- added decimal-->
-    <input type="button" name="clearall" value="AC" onClick="runclearall()">
+    <input type="button" class ="numbers" name="0" value="0" onClick="run0()">
+    <input type="button" class ="numbers" name="." value="." onClick="runDec()"> <!-- added decimal-->
+    <input type="button" class ="calculate" name="calc" value="=" onClick="evalu()">
+    <input type="button" class ="operators" name="mult" value="*" onClick="runmult()">
+    
+
   </div>
 
   
